@@ -1,0 +1,207 @@
+Python 3.12.1 (tags/v3.12.1:2305ca5, Dec  7 2023, 22:03:25) [MSC v.1937 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+
+= RESTART: C:\Users\Henry\Desktop\新建文件夹\Try.py
+文本框编号：
+文本框内容：
+文本框位置：左=-3114964英寸, 上=-420256英寸
+文本框尺寸：宽度=7629236英寸, 高度=7335982英寸
+-----------------------
+文本框编号：Rrhar’il
+文本框内容：Rrhar’il
+文本框位置：左=2809874英寸, 上=3106057英寸
+文本框尺寸：宽度=3286125英寸, 高度=1377329英寸
+-----------------------
+文本框编号：物理
+文本框内容：物理
+文本框位置：左=3288506英寸, 上=2359820英寸
+文本框尺寸：宽度=3064210英寸, 高度=746238英寸
+-----------------------
+文本框编号：
+文本框内容：
+文本框位置：左=7571322英寸, 上=3395224英寸
+文本框尺寸：宽度=3207007英寸, 高度=1054386英寸
+-----------------------
+文本框编号：
+文本框内容：
+文本框位置：左=5549900英寸, 上=1819982英寸
+文本框尺寸：宽度=5425208英寸, 高度=2853904英寸
+-----------------------
+文本框编号：
+文本框内容：
+文本框位置：左=9483436英寸, 上=-236682英寸
+文本框尺寸：宽度=7629236英寸, 高度=7335982英寸
+-----------------------
+文本框编号：4
+文本框内容：4
+文本框位置：左=10732921英寸, 上=3421380英寸
+文本框尺寸：宽度=1613877英寸, 高度=1054386英寸
+-----------------------
+文本框编号：5
+文本框内容：5
+文本框位置：左=10349752英寸, 上=4494173英寸
+文本框尺寸：宽度=1613877英寸, 高度=1054386英寸
+-----------------------
+文本框编号：6
+文本框内容：6
+文本框位置：左=9977901英寸, 上=5581128英寸
+文本框尺寸：宽度=1613877英寸, 高度=1054386英寸
+-----------------------
+文本框编号：3
+文本框内容：3
+文本框位置：左=11118590英寸, 上=2340967英寸
+文本框尺寸：宽度=1613877英寸, 高度=1054386英寸
+-----------------------
+文本框编号：2
+文本框内容：2
+文本框位置：左=11492576英寸, 上=1261632英寸
+文本框尺寸：宽度=1613877英寸, 高度=1054386英寸
+-----------------------
+文本框编号：1
+文本框内容：1
+文本框位置：左=11867892英寸, 上=185766英寸
+文本框尺寸：宽度=1613877英寸, 高度=1054386英寸
+-----------------------
+文本框编号：7
+文本框内容：7
+文本框位置：左=9602816英寸, 上=6659737英寸
+文本框尺寸：宽度=1613877英寸, 高度=1054386英寸
+-----------------------
+
+================== RESTART: C:/Users/Henry/Desktop/新建文件夹/t.py ==================
+
+================== RESTART: C:/Users/Henry/Desktop/新建文件夹/t.py ==================
+Traceback (most recent call last):
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\opc\serialized.py", line 81, in _write
+    self._write_content_types_stream(phys_writer)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\opc\serialized.py", line 91, in _write_content_types_stream
+    phys_writer.write(
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\opc\serialized.py", line 220, in write
+    self._zipf.writestr(pack_uri.membername, blob)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\util.py", line 215, in __get__
+    value = self._fget(obj)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\opc\serialized.py", line 225, in _zipf
+    return zipfile.ZipFile(self._pkg_file, "w", compression=zipfile.ZIP_DEFLATED)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1321, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: '修改后的PPT.pptx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/Henry/Desktop/新建文件夹/t.py", line 26, in <module>
+    ppt.save("修改后的PPT.pptx")
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\presentation.py", line 39, in save
+    self.part.save(file)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\parts\presentation.py", line 107, in save
+    self.package.save(path_or_stream)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\opc\package.py", line 153, in save
+    PackageWriter.write(pkg_file, self._rels, tuple(self.iter_parts()))
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\opc\serialized.py", line 76, in write
+    cls(pkg_file, pkg_rels, parts)._write()
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\opc\serialized.py", line 80, in _write
+    with _PhysPkgWriter.factory(self._pkg_file) as phys_writer:
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\opc\serialized.py", line 216, in __exit__
+    self._zipf.close()
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\util.py", line 215, in __get__
+    value = self._fget(obj)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\opc\serialized.py", line 225, in _zipf
+    return zipfile.ZipFile(self._pkg_file, "w", compression=zipfile.ZIP_DEFLATED)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1321, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: '修改后的PPT.pptx'
+
+================== RESTART: C:/Users/Henry/Desktop/新建文件夹/t.py ==================
+
+================== RESTART: C:/Users/Henry/Desktop/新建文件夹/t.py ==================
+Traceback (most recent call last):
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\opc\serialized.py", line 81, in _write
+    self._write_content_types_stream(phys_writer)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\opc\serialized.py", line 91, in _write_content_types_stream
+    phys_writer.write(
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\opc\serialized.py", line 220, in write
+    self._zipf.writestr(pack_uri.membername, blob)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\util.py", line 215, in __get__
+    value = self._fget(obj)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\opc\serialized.py", line 225, in _zipf
+    return zipfile.ZipFile(self._pkg_file, "w", compression=zipfile.ZIP_DEFLATED)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1321, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: '修改后的PPT.pptx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/Henry/Desktop/新建文件夹/t.py", line 59, in <module>
+    ppt.save("修改后的PPT.pptx")
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\presentation.py", line 39, in save
+    self.part.save(file)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\parts\presentation.py", line 107, in save
+    self.package.save(path_or_stream)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\opc\package.py", line 153, in save
+    PackageWriter.write(pkg_file, self._rels, tuple(self.iter_parts()))
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\opc\serialized.py", line 76, in write
+    cls(pkg_file, pkg_rels, parts)._write()
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\opc\serialized.py", line 80, in _write
+    with _PhysPkgWriter.factory(self._pkg_file) as phys_writer:
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\opc\serialized.py", line 216, in __exit__
+    self._zipf.close()
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\util.py", line 215, in __get__
+    value = self._fget(obj)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\opc\serialized.py", line 225, in _zipf
+    return zipfile.ZipFile(self._pkg_file, "w", compression=zipfile.ZIP_DEFLATED)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1321, in __init__
+    self.fp = io.open(file, filemode)
+PermissionError: [Errno 13] Permission denied: '修改后的PPT.pptx'
+
+================== RESTART: C:/Users/Henry/Desktop/新建文件夹/t.py ==================
+
+================== RESTART: C:/Users/Henry/Desktop/新建文件夹/t.py ==================
+
+================== RESTART: C:/Users/Henry/Desktop/新建文件夹/t.py ==================
+
+================== RESTART: C:/Users/Henry/Desktop/新建文件夹/t.py ==================
+
+================== RESTART: C:/Users/Henry/Desktop/新建文件夹/t.py ==================
+
+Warning (from warnings module):
+  File "C:/Users/Henry/Desktop/新建文件夹/t.py", line 165
+    shape.image = "table\oimg\A0.jpg"
+SyntaxWarning: invalid escape sequence '\o'
+>>> 
+================== RESTART: C:/Users/Henry/Desktop/新建文件夹/t.py ==================
+
+Warning (from warnings module):
+  File "C:/Users/Henry/Desktop/新建文件夹/t.py", line 166
+    picture = slide.shapes.add_picture("\table\oimg\A0.jpg", left, top, width, height)
+SyntaxWarning: invalid escape sequence '\o'
+>>> 
+====================== RESTART: C:/Users/Henry/Desktop/新建文件夹/t.py =====================
+Traceback (most recent call last):
+  File "C:/Users/Henry/Desktop/新建文件夹/t.py", line 166, in <module>
+    picture = slide.shapes.add_picture("\table\oimg\A0.jpg", left, top, width, height)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\shapes\shapetree.py", line 351, in add_picture
+    image_part, rId = self.part.get_or_add_image_part(image_file)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\parts\slide.py", line 39, in get_or_add_image_part
+    image_part = self._package.get_or_add_image_part(image_file)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\package.py", line 36, in get_or_add_image_part
+    return self._image_parts.get_or_add_image_part(image_file)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\package.py", line 153, in get_or_add_image_part
+    image = Image.from_file(image_file)
+  File "D:\Users\Henry\AppData\Local\Programs\Python\Python312\Lib\site-packages\pptx\parts\image.py", line 162, in from_file
+    with open(image_file, "rb") as f:
+OSError: [Errno 22] Invalid argument: '\table\\oimg\\A0.jpg'
+
+Warning (from warnings module):
+  File "C:/Users/Henry/Desktop/新建文件夹/t.py", line 166
+    picture = slide.shapes.add_picture("table\oimg\A0.jpg", left, top, width, height)
+SyntaxWarning: invalid escape sequence '\o'
+>>> 
+====================== RESTART: C:/Users/Henry/Desktop/新建文件夹/t.py =====================
+
+Warning (from warnings module):
+  File "C:/Users/Henry/Desktop/新建文件夹/t.py", line 166
+    picture = slide.shapes.add_picture("table\oimg\A0.jpg", left, top, width, height)
+SyntaxWarning: invalid escape sequence '\o'
+>>> 
+====================== RESTART: C:/Users/Henry/Desktop/新建文件夹/t.py =====================
